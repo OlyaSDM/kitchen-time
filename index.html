@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kitchen Timer</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="assets/images/logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div>
+         <img src="assets/images/timer.png" alt="timer" width="80" height="80">
+      </div>
+      <div class="inputMain">
+         <div class="inputTwo">
+            <input id="min" type="number" placeholder="0" size="2" maxlength="4"  min="0"  class="min">
+            <p class="text">Minutes</p>
+         </div>
+         <div class="inputTwo">
+            <input id="sec" type="number" placeholder="00" size="2" maxlength="4"  min="0" >
+            <p class="text">Secondes</p>
+         </div>
+      </div>
+      <div>
+         <button class="startButton btn" id="btnTime">Start</button>
+      </div>
+      </div>
+      <div id="container-countdown" class="time column">
+         <p class="startTime" id="countTime">0 : 00</p>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
